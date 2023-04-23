@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My Website</title>
-    <style>
+	<style>
 		/* CSS for the tab navigation */
 		.tab {
 			overflow: hidden;
@@ -100,45 +100,12 @@
 	<div id="Home" class="tabcontent">
 	  <h3>Home</h3>
 	  <div class="profile-photo">
-        <img src="images/profile.jpg" alt="Profile Photo">
-        <div>Hover over the photo for animation</div>
-        </div>
+	  	<img src="images/profile.jpg" alt="Profile Photo">
+	  	<div>Hover over the photo for animation</div>
+	  </div>
 	</div>
 
 	<div id="Education" class="tabcontent">
 	  <h3>Education</h3>
-	  <p>I have a Master degree in Information Technology in Deakin University, Melbourne.</p>
-	</div>
-
-	<div id="Experience" class="tabcontent">
-	  <h3>Experience</h3>
-	  <p>I have 1.5 years of experience working as a Mulesoft developer.</p>
-	</div>
-
-	<div id="Contact" class="tabcontent">
-	  <h3>Contact</h3>
-	  <p>You can reach me at my email address: pagidimaneesh@email.com</p>
-	</div>
-
-	<script>
-		// JavaScript to open the tab content
-		function openTab(evt, tabName) {
-		  var i, tabcontent, tablinks;
-		  tabcontent = document.getElementsByClassName("tabcontent");
-		  for (i = 0; i < tabcontent.length; i++) {
-		    tabcontent[i].style.display = "none";
-		  }
-		  tablinks = document.getElementsByClassName("tablinks");
-		  for (i = 0; i < tablinks.length; i++) {
-		    tablinks[i].className = tablinks[i].className.replace(" active", "");
-		  }
-		  document.getElementById(tabName).style.display = "block";
-		  evt.currentTarget.className += " active";
-		}
-
-		// Set the default tab to be open on page load
-		document.getElementById("defaultOpen").click();
-	</script>
-
-</body>
-</html>
+	  <p>I have a Bachelor's degree in Computer Science from XYZ University.</p>
+	</div
