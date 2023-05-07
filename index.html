@@ -3,93 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My Website</title>
-    <style>
-		/* CSS for the tab navigation */
-		.tab {
-			overflow: hidden;
-			border: 1px solid #ccc;
-			background-color: #f1f1f1;
-			margin-top: 20px;
-		}
-		
-		.tab button {
-			background-color: inherit;
-			float: left;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			padding: 14px 16px;
-			transition: 0.3s;
-			font-size: 17px;
-		}
-		
-		.tab button:hover {
-			background-color: #ddd;
-		}
-		
-		.tab button.active {
-			background-color: #ccc;
-		}
-		
-		/* CSS for the tab content */
-		.tabcontent {
-			display: none;
-			padding: 6px 12px;
-			border: 1px solid #ccc;
-			border-top: none;
-		}
-		
-		/* CSS for the active tab content */
-		#Home {display: block;}
-		
-		/* CSS for the photo and animations */
-		.profile-photo {
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			overflow: hidden;
-			margin: 0 auto;
-			position: relative;
-		}
-		
-		.profile-photo img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			transition: transform 0.5s ease;
-		}
-		
-		.profile-photo:hover img {
-			transform: scale(1.1);
-		}
-		
-		.profile-photo::after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background: rgba(0, 0, 0, 0.5);
-			top: 0;
-			left: 0;
-			opacity: 0;
-			transition: opacity 0.5s ease;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			color: #fff;
-			font-size: 24px;
-			font-weight: bold;
-			pointer-events: none;
-		}
-		
-		.profile-photo:hover::after {
-			opacity: 1;
-		}
-	</style>
+    <link rel="stylesheet" href="css/style.css"></link>
 </head>
 <body>
-
+    
 	<div class="tab">
 	  <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
 	  <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
@@ -101,7 +18,15 @@
 	  <h3>Home</h3>
 	  <div class="profile-photo">
         <img src="images/profile.jpg" alt="Profile Photo">
-        <div>Hover over the photo for animation</div>
+        </div>
+        <div>
+            <p>Maneesh Reddy Pagidi is a software engineer with a focus on design, development, testing, and implementing software projects. He is proficient in several programming languages, including Python, Java, R, C, C++, and JavaScript, and has experience working with databases such as MySQL, MS SQL, Postgres SQL, and Mongo-DB.</p>
+
+            <p>Maneesh has worked on various tools such as Any point Studio, GIT, Bit-Bucket, Cloud-hub, Amazon MQ, Sumo Logs, JIRA, Service Now, Eclipse, Weka, Tableau, SQL, CIPLEX, and R Studio. He has knowledge and experience working on web development, machine learning, system designing, and networking. Maneesh is familiar with several frameworks and libraries such as React-JS, Jest, Tensorflow, OpenCV, Keras, NLTK, React-JS, Jest, and Mocha, and has worked on technologies like Docker, Node-red, AZURE cloud, IBM cloud, Tizen OS application development, and Selenium. </p>
+                
+            <p>Maneesh has worked in several positions such as Full Stack Engineer, Junior Integration Developer, and Graduate Support Analyst in companies like Techworkz, Kargo Logistics, Mecca Brands, and Parks Victoria. He has experience designing and developing MuleSoft flows and handling exception strategies. Maneesh is skilled at monitoring and debugging production incidents and tracking alerts for queue consumption. He has experience with continuous integration and development and has worked with databases like MSSQL and Postgres SQL. Maneesh has experience providing IT phone support to end-users, troubleshooting, and customer service. He has also worked on setting up cloud infrastructure and building dynamic and browser compatible pages using HTML, CSS3, MVC, and JavaScript. Maneesh has worked on natural scene image text detector projects, and his thesis project involved extracting text from natural scene images and converting them into English using EAST Machine learning models.</p>
+                
+            <p>Overall, Maneesh is a result-oriented software engineer with expertise in various programming languages, databases, tools, and technologies, making him a valuable asset to any software development team.</p>
         </div>
 	</div>
 
@@ -120,25 +45,7 @@
 	  <p>You can reach me at my email address: pagidimaneesh@email.com</p>
 	</div>
 
-	<script>
-		// JavaScript to open the tab content
-		function openTab(evt, tabName) {
-		  var i, tabcontent, tablinks;
-		  tabcontent = document.getElementsByClassName("tabcontent");
-		  for (i = 0; i < tabcontent.length; i++) {
-		    tabcontent[i].style.display = "none";
-		  }
-		  tablinks = document.getElementsByClassName("tablinks");
-		  for (i = 0; i < tablinks.length; i++) {
-		    tablinks[i].className = tablinks[i].className.replace(" active", "");
-		  }
-		  document.getElementById(tabName).style.display = "block";
-		  evt.currentTarget.className += " active";
-		}
-
-		// Set the default tab to be open on page load
-		document.getElementById("defaultOpen").click();
-	</script>
+	<script src="js/basic.js"></script>
 
 </body>
 </html>

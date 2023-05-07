@@ -1,0 +1,108 @@
+	/* CSS for the sidebar */
+    .sidebar {
+        height: 100%;
+        width: 100px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #f1f1f1;
+        padding-top: 20px;
+    }
+    
+    .sidebar img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar img:hover {
+        transform: scale(1.1);
+    }
+    
+    /* CSS for the tab navigation */
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        margin-top: 20px;
+    }
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    
+    .tab button.active {
+        background-color: #ccc;
+    }
+    
+    /* CSS for the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+    
+    /* CSS for the active tab content */
+    #Home {display: block;}
+    
+    /* CSS for the photo and animations */
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .profile-photo:hover img {
+        transform: scale(1.1);
+    }
+    
+    .profile-photo::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        pointer-events: none;
+    }
+    
+    .profile-photo:hover::after {
+        opacity: 1;
+    }
